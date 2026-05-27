@@ -7,6 +7,12 @@ on:
 
 jobs:
 
-  call-reusable-workflow:
+  call-workflow:
 
-    uses: rsy2022p/central/.github/workflows/test.yml@main
+    uses: demo-org/central/.github/workflows/test.yml@main
+
+    with:
+      app-name: appteam
+
+    secrets:
+      MY_SECRET: ${{ secrets.MY_SECRET }}
