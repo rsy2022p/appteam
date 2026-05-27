@@ -1,0 +1,12 @@
+name: Caller Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  call-reusable-workflow:
+
+    uses: rsy2022p/central/.github/workflows/test.yml@main
