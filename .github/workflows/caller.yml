@@ -9,7 +9,7 @@ jobs:
 
   call-workflow:
 
-    uses: demo-org/central/.github/workflows/test.yml@main
+    uses: rsy2022p/central/.github/workflows/test.yml@main
 
     with:
       app-name: appteam
